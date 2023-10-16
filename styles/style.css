@@ -25,7 +25,7 @@
   "title title"                      
   "text text";
   color: var(--color-accent, #ff0070);
-  padding: var(--padding-size, 10px);
+  padding: var(--small-size, 10px);
   inline-size: 100%;
   aspect-ratio: 9/16;
 }
@@ -153,9 +153,9 @@
 }
 
 .section {
-  margin-block-start: var(--margin-size, 40px);
-  padding-block-end: var(--padding-size, 10px);
-  padding-inline: var(--padding-size, 10px);
+  margin-block-start: var(--big-size, 40px);
+  padding-block-end: var(--small-size, 10px);
+  padding-inline: var(--small-size, 10px);
 }
 
 .section:last-of-type {
@@ -210,7 +210,7 @@
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
-  margin-block-start: var(--padding-size, 10px);
+  margin-block-start: var(--small-size, 10px);
 }
 
 .footer {
@@ -220,8 +220,8 @@
   align-content: center;
   inline-size: 100%;
   aspect-ratio: 9/16;
-  padding: var(--padding-size, 10px);
-  margin-block-start: var(--margin-size, 40px);
+  padding: var(--small-size, 10px);
+  margin-block-start: var(--big-size, 40px);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--page-title-color, #DB00FF);
   text-shadow: 2px 2px 0px var(--shadow-color, #ff0070);
@@ -256,8 +256,8 @@
 
 @media (width >= 768px) {
   :root {
-    --padding-size: 20px;
-    --margin-size: 60px;
+    --small-size: 20px;
+    --big-size: 60px;
   }
 
   .header::after{
@@ -272,7 +272,7 @@
   .main-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     position: relative;
-    inset-inline-start: calc(-1 * var(--padding-size, 20px));
+    inset-inline-start: calc(-1 * var(--small-size, 20px));
   }
 
 

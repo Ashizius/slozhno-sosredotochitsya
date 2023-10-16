@@ -3,9 +3,9 @@
   и их переопределение под различные устройства
 */
 :root {
-  --padding-size: 10px;
+  --small-size: 10px;
   --gap-size: 20px;
-  --margin-size: 40px;
+  --big-size: 40px;
   --min-margin-size: 10px;
   --font-main: 'IBM Plex mono';
 
