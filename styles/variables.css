@@ -6,6 +6,7 @@
   --padding-size: 10px;
   --gap-size: 20px;
   --margin-size: 40px;
+  --min-margin-size: 10px;
   --font-main: 'IBM Plex mono';
 
   --bg-color-main: #000028;
@@ -17,4 +18,5 @@
   --page-title-color: #DB00FF;
   --shadow-color: #ff0070;
   --shadow-color-link: #ff0070;
+  --transparent-border-color: rgba(255, 0, 112, 0.40);
 }

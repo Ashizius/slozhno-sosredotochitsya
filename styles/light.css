@@ -18,6 +18,7 @@
   --page-title-color: #ffc2e6;
   --shadow-color: #ff8dcb;
   --shadow-color-link: #ff8dcb;
+  --transparent-border-color: rgba(50, 49, 45, 0.40);
 }
 
 .theme_light .decoration-rec {
@@ -35,6 +36,7 @@
     --page-title-color: #ffc2e6;
     --shadow-color: #ff8dcb;
     --shadow-color-link: #ff8dcb;
+    --transparent-border-color: rgba(50, 49, 45, 0.40);    
   }
 
   .theme_auto .decoration-rec {
