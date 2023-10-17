@@ -25,7 +25,7 @@
 .theme_dark .decoration-rec {
   display: inline-block;
 }
-
+/*
 @media (prefers-color-scheme: dark) {
   .page.theme_auto {
     --bg-color-main: #000028;
@@ -44,3 +44,4 @@
     display: none;
   }
 }
+*/
