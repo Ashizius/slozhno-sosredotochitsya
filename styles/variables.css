@@ -9,14 +9,14 @@
   --min-margin-size: 10px;
   --font-main: 'IBM Plex mono';
 
-  --bg-color-main: #000028;
-  --bg-color-accent: #ff0070;
-  --bg-image: url(../images/cover-image-dark.png);
-  --color-inversed: #000028;
-  --color-main: #f1b2ce;
-  --color-accent: #ff0070;
-  --page-title-color: #DB00FF;
-  --shadow-color: #ff0070;
-  --shadow-color-link: #ff0070;
-  --transparent-border-color: rgba(255, 0, 112, 0.40);
+  --bg-color-main: #fff1f7;
+  --bg-image: url(../images/cover-image-light.png);
+  --bg-color-accent: #ff8dcb;
+  --color-inversed: #353430;
+  --color-main: #353430;
+  --color-accent: #353430;
+  --page-title-color: #ffc2e6;
+  --shadow-color: #ff8dcb;
+  --shadow-color-link: #ff8dcb;
+  --transparent-border-color: rgba(50, 49, 45, 0.40);    
 }
