@@ -285,6 +285,14 @@
     gap: var(--gap-size, 20px);
   }
 
+    .section:nth-of-type(3) .section__title {
+    grid-row: 1 / span 2;
+  }
+
+    .section:nth-of-type(2n) .section__list {
+    grid-column-start: 1;
+  }
+
   .section__list {
     grid-column: 2 / -1;
     list-style: none;
@@ -292,13 +300,11 @@
     flex-direction: column;
     gap: var(--gap-size, 20px);
   }
-  
-    .section:nth-of-type(3) .section__title {
-    grid-row: 1 / span 2;
-  }
 
-    .section:nth-of-type(2n) .section__list {
-    grid-column-start: 1;
+  .section__list-item {
+    flex-basis: 30%;
+    flex-grow: 1;
+    flex-shrink: 1;
   }
 
   .section__card {
