@@ -57,7 +57,7 @@
 
 
 .decoration-rec {
-  display: inline-block;
+  display: none;
   align-self: start;
   position: relative;
   font-size: 18px;    /*жёстко задан, т.к. декоративный элемент*/
