@@ -3,20 +3,20 @@
   и их переопределение под различные устройства
 */
 :root {
-  --small-size: 10px;
-  --gap-size: 20px;
-  --big-size: 40px;
-  --min-margin-size: 10px;
-  --font-main: 'IBM Plex mono';
+  --small-size: 10px; /*малый размер отступа*/
+  --gap-size: 20px; /*размер зазора во флексах и гридах*/
+  --big-size: 40px; /*большой отступ*/
+  --min-margin-size: 10px; /*минимальный отступ -- одинаковый для всех разрешений*/
+  --font-main: 'IBM Plex mono'; /*основной шрифт*/
 
-  --bg-color-main: #fff1f7;
-  --bg-image: url(../images/cover-image-light.png);
-  --bg-color-accent: #ff8dcb;
-  --color-inversed: #353430;
-  --color-main: #353430;
-  --color-accent: #353430;
-  --page-title-color: #ffc2e6;
-  --shadow-color: #ff8dcb;
-  --shadow-color-link: #ff8dcb;
-  --transparent-border-color: rgba(50, 49, 45, 0.40);    
+  --bg-color-main: #fff1f7; /*основной цвет фона*/
+  --bg-image: url(../images/cover-image-light.png); /*фоновая пикча*/
+  --bg-color-accent: #ff8dcb; /*акцентный цвет фона*/
+  --color-inversed: #353430; /*цвет текста для акцентного фона*/
+  --color-main: #353430; /*основной цвет текста*/
+  --color-accent: #353430; /*акцентный цвет для текста и границ*/
+  --page-title-color: #ffc2e6; /*цвет текста заголовка*/
+  --shadow-color: #ff8dcb; /*цвет тени для заголовка и футера*/
+  --shadow-color-link: #ff8dcb; /*цвет тени ссылок*/
+  --transparent-border-color: rgba(50, 49, 45, 0.4);
 }

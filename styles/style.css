@@ -4,39 +4,40 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-color: var(--bg-color-main, #000028);
   background-image: var(--bg-image, url(../images/cover-image-dark.png));
-  background-position: center; 
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: var(--color-main, #f1b2ce);
-  font-size:   1.125rem;
+  font-size: 1.125rem;
   font-weight: 400;
   font-family: var(--font-main, serif);
   line-height: 130%;
 }
 
 .header {
-  display: grid;  
+  display: grid;
   grid-template-columns: repeat(2, calc(100% / 2));
   grid-template-rows: 1fr min-content 1fr;
   justify-items: end;
   align-items: start;
-  grid-template-areas:  ".   menu"
-  "title title"                      
-  "text text";
-  color: var(--color-accent, #ff0070);
+  grid-template-areas:
+    '.   menu'
+    'title title'
+    'text text';
+  color: var(--color-accent, #353430);
   padding: var(--small-size, 10px);
   inline-size: 100%;
   aspect-ratio: 9/16;
 }
 
 .header::before {
-  content:'';
+  content: '';
   display: inline-block;
   inline-size: 25px;
-  block-size:  25px;
-  border-block-start: 1px solid var(--color-accent, #ff0070);
-  border-inline-end:  1px solid var(--color-accent, #ff0070);
+  block-size: 25px;
+  border-block-start: 1px solid var(--color-accent, #353430);
+  border-inline-end: 1px solid var(--color-accent, #353430);
   /*grid-area: corner-upper;*/
   grid-area: menu;
   align-self: start;
@@ -44,23 +45,22 @@
 }
 
 .header::after {
-  content:'';
+  content: '';
   display: inline-block;
   inline-size: 25px;
-  block-size:  25px;
-  border-inline-start: 1px solid var(--color-accent, #ff0070);
-  border-block-end:  1px solid var(--color-accent, #ff0070);
+  block-size: 25px;
+  border-inline-start: 1px solid var(--color-accent, #353430);
+  border-block-end: 1px solid var(--color-accent, #353430);
   grid-area: text;
   justify-self: start;
   align-self: end;
 }
 
-
 .decoration-rec {
   display: none;
   align-self: start;
   position: relative;
-  font-size: 18px;    /*жёстко задан, т.к. декоративный элемент*/
+  font-size: 18px; /*жёстко задан, т.к. декоративный элемент*/
   inset: 1px -1em;
   text-align: end;
   grid-area: menu;
@@ -73,9 +73,9 @@
   inset: -2px 9.5px;
   border-radius: 50%;
   inline-size: 9px;
-  block-size:  9px;
+  block-size: 9px;
   justify-self: start;
-  border: 1px solid var(--color-accent, #ff0070);
+  border: 1px solid var(--color-accent, #353430);
   box-shadow: 0 0 4px 2.5px currentColor;
   background-color: currentColor;
 }
@@ -106,35 +106,35 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--transparent-border-color, rgba(255, 0, 112, 0.40));
+  border: 1px solid var(--transparent-border-color, rgba(50, 49, 45, 0.4));
 }
 
 .header__theme-menu-button:focus {
-  outline:none;
-  border-bottom: 1px solid var(--color-accent, #ff0070);
+  outline: none;
+  border-bottom: 1px solid var(--color-accent, #353430);
 }
 
-@supports (selector(button:focus-visible)){
+@supports (selector(button:focus-visible)) {
   .header__theme-menu-button:focus {
     border-bottom: 1px solid transparent;
   }
-} 
+}
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--color-accent, #ff0070);
+  border-bottom: 1px solid var(--color-accent, #353430);
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--color-accent, #ff0070);
+  border: 1px solid var(--color-accent, #353430);
   pointer-events: none;
 }
 
 .main-title {
-  color: var(--page-title-color, #DB00FF);
+  color: var(--page-title-color, #ffc2e6);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 82.5%;
-  text-shadow: 4px 4px 0px var(--shadow-color, #ff0070);
+  text-shadow: 4px 4px 0px var(--shadow-color, #ff8dcb);
   grid-area: title;
   justify-self: start;
   align-self: center;
@@ -146,8 +146,8 @@
 }
 
 .title-decorated {
-  background-color: var(--bg-color-accent, #ff0070);
-  color: var(--color-inversed, #000028);
+  background-color: var(--bg-color-accent, #ff8dcb);
+  color: var(--color-inversed, #353430);
   font-weight: 700;
   font-size: inherit;
 }
@@ -163,7 +163,7 @@
 }
 
 .section__title {
-  color: var(--color-accent, #ff0070);
+  color: var(--color-accent, #353430);
   font-weight: 700;
   line-height: 130%;
   font-size: inherit;
@@ -173,12 +173,12 @@
   margin-block-start: var(--gap-size, 20px);
 }
 
-.section__card>.title-decorated {
+.section__card > .title-decorated {
   margin-block-end: var(--min-margin-size, 10px);
 }
 
 .link {
-  text-shadow: 2px 2px 0px var(--shadow-color-link, #ff0070);
+  text-shadow: 2px 2px 0px var(--shadow-color-link, #ff8dcb);
   text-decoration: none;
   font-style: none;
 }
@@ -194,14 +194,14 @@
 }
 
 .link:focus-visible {
-  outline: 1px solid var(--color-accent, #ff0070);
+  outline: 1px solid var(--color-accent, #353430);
 }
 
-.section__title+.title-decorated {
+.section__title + .title-decorated {
   margin-block-start: var(--gap-size, 20px);
 }
 
-.title-decorated+.section__list .title-decorated {
+.title-decorated + .section__list .title-decorated {
   font-weight: 400;
 }
 
@@ -223,29 +223,29 @@
   padding: var(--small-size, 10px);
   margin-block-start: var(--big-size, 40px);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  color: var(--page-title-color, #DB00FF);
-  text-shadow: 2px 2px 0px var(--shadow-color, #ff0070);
+  color: var(--page-title-color, #ffc2e6);
+  text-shadow: 2px 2px 0px var(--shadow-color, #ff8dcb);
   font-weight: 700;
   line-height: 82.5%;
 }
 
 .footer::before {
-  content:'';
+  content: '';
   display: inline-block;
   inline-size: 25px;
-  block-size:  25px;
-  border-inline-end: 1px solid var(--color-accent, #ff0070);
-  border-block-start:  1px solid var(--color-accent, #ff0070);
+  block-size: 25px;
+  border-inline-end: 1px solid var(--color-accent, #353430);
+  border-block-start: 1px solid var(--color-accent, #353430);
   align-self: end;
 }
 
 .footer::after {
-  content:'';
+  content: '';
   display: inline-block;
   inline-size: 25px;
-  block-size:  25px;
-  border-inline-start: 1px solid var(--color-accent, #ff0070);
-  border-block-end:  1px solid var(--color-accent, #ff0070);
+  block-size: 25px;
+  border-inline-start: 1px solid var(--color-accent, #353430);
+  border-block-end: 1px solid var(--color-accent, #353430);
   align-self: start;
 }
 
@@ -253,14 +253,13 @@
   text-align: center;
 }
 
-
 @media (width >= 768px) {
   :root {
     --small-size: 20px;
     --big-size: 60px;
   }
 
-  .header::after{
+  .header::after {
     grid-area: corner;
   }
 
@@ -268,13 +267,11 @@
     grid-area: menu;
   }
 
-
   .main-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     position: relative;
     inset-inline-start: calc(-1 * var(--small-size, 20px));
   }
-
 
   .section {
     display: grid;
@@ -284,8 +281,7 @@
     gap: var(--gap-size, 20px);
   }
 
-
-    .section:nth-of-type(2n) .section__list {
+  .section:nth-of-type(2n) .section__list {
     grid-column-start: 1;
   }
 
@@ -311,12 +307,12 @@
     margin-block-start: 0;
   }
 
-  .section__title+.title-decorated {
+  .section__title + .title-decorated {
     margin-block-start: 0;
     grid-column: 2 / -1;
   }
 
-  .section--images>.title-decorated {
+  .section--images > .title-decorated {
     grid-column: 1/-1;
   }
 
@@ -327,11 +323,13 @@
     gap: var(--gap-size, 20px);
   }
 
-  .section--images .section__list-item:nth-child(1), .section--images .section__list-item:nth-child(5) {
+  .section--images .section__list-item:nth-child(1),
+  .section--images .section__list-item:nth-child(5) {
     grid-column: span 2;
   }
 
-  .section--images .section__list-item:nth-child(2), .section--images .section__list-item:nth-child(3) {
+  .section--images .section__list-item:nth-child(2),
+  .section--images .section__list-item:nth-child(3) {
     grid-row: span 2;
   }
 
@@ -342,16 +340,16 @@
   .footer {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
-
 }
 
 @media (1024px > width >= 768px) {
   .header {
     aspect-ratio: 3/4;
-    grid-template-areas:  ".   menu"
-                          "title title"                      
-                          "corner text";
-  } 
+    grid-template-areas:
+      '.   menu'
+      'title title'
+      'corner text';
+  }
 
   .header__theme-menu {
     justify-self: end;
@@ -374,10 +372,11 @@
 @media (width >= 1024px) {
   .header {
     aspect-ratio: 4/3;
-    grid-template-areas:  "menu   menu"
-                          "title title"                      
-                          "corner text";
-  } 
+    grid-template-areas:
+      'menu   menu'
+      'title title'
+      'corner text';
+  }
 
   .header__theme-menu {
     justify-self: center;
@@ -399,5 +398,4 @@
   .footer {
     aspect-ratio: 4/3;
   }
-
 }
