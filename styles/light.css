@@ -24,7 +24,7 @@
 .theme_light .decoration-rec {
   display: none;
 }
-
+/*
 @media (prefers-color-scheme: light) {
   .page.theme_auto {
     --bg-color-main: #fff1f7;
@@ -54,4 +54,4 @@
   .page.theme_auto {
     --shadow-color: #ff0070;
   }
-}
+}*/
