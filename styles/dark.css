@@ -22,7 +22,7 @@
 }
 
 .theme_dark .decoration-rec {
-  display: inline-block;
+  display: block;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -40,6 +40,6 @@
   }
 
   .theme_auto .decoration-rec {
-    display: inline-block;
+    display: block;
   }
 }

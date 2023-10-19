@@ -8,6 +8,11 @@
   --big-size: 40px; /*большой отступ*/
   --min-margin-size: 10px; /*минимальный отступ -- одинаковый для всех разрешений*/
   --font-main: 'IBM Plex mono'; /*основной шрифт*/
+  --font-size-logo: clamp(
+    7.25rem,
+    7.0115rem + 1.0178vw,
+    7.5rem
+  ); /*размер шрифта логотипа страницы*/
 
   --bg-color-main: #fff1f7; /*основной цвет фона*/
   --bg-image: url(../images/cover-image-light.png); /*фоновая пикча*/
@@ -19,4 +24,12 @@
   --shadow-color: #ff8dcb; /*цвет тени для заголовка и футера*/
   --shadow-color-link: #ff8dcb; /*цвет тени ссылок*/
   --transparent-border-color: rgba(50, 49, 45, 0.4);
+}
+
+@media (width >= 768px) {
+  :root {
+    --small-size: 20px;
+    --big-size: 60px;
+    --font-size-logo: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }
