@@ -38,8 +38,8 @@
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  border-block-start: 1px solid currentColor;
-  border-inline-end: 1px solid currentColor;
+  border-block-start: 1px solid var(--color-accent, #353430);
+  border-inline-end: 1px solid var(--color-accent, #353430);
   /*grid-area: corner-upper;*/
   grid-area: 1 / -2 / 2 / -1;
   align-self: start;
@@ -51,8 +51,8 @@
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-start: 1px solid currentColor;
-  border-block-end: 1px solid currentColor;
+  border-inline-start: 1px solid var(--color-accent, #353430);
+  border-block-end: 1px solid var(--color-accent, #353430);
   grid-area: -2 / 1 / -1 / 2;
   justify-self: start;
   align-self: end;
@@ -155,7 +155,6 @@
   color: var(--color-inversed, #353430);
   font-weight: 700;
   font-size: inherit;
-  overflow-wrap: break-word;
 }
 
 .section {
@@ -173,7 +172,6 @@
   font-weight: 700;
   line-height: 130%;
   font-size: inherit;
-  overflow-wrap: break-word;
 }
 
 .section__card {
@@ -337,7 +335,6 @@
 
 @media (1024px > width >= 768px) {
   .header {
-    min-height: 1024px;
     grid-template-areas:
       '.   menu'
       'title title'
@@ -357,14 +354,10 @@
     grid-template-columns: 1fr 2fr;
   }
 
-  .footer {
-    min-height: 1024px;
-  }
 }
 
 @media (width >= 1024px) {
   .header {
-    min-height: 768px;
     grid-template-areas:
       'menu   menu'
       'title title'
@@ -388,7 +381,4 @@
     flex-direction: row;
   }
 
-  .footer {
-    min-height: 768px;
-  }
 }
